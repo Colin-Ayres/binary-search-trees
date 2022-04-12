@@ -2,15 +2,15 @@
 
 # This class holds nodes' values for data and pointer
 class Node
-  attr_accessor :data, :next_node
+  attr_accessor :data, :left, :right
 
-  def initialize(data = nil, next_node = nil)
+  def initialize(data = nil, left = nil, right = nil)
     @data = data
-    @next_node = next_node
+    @right = right
+    @left = left
   end
 
   def to_s
-    # puts "data: #{@data}, next_node: #{@next_node}"
-    puts @data
+    @data.to_s
   end
 end
